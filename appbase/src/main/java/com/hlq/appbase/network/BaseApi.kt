@@ -30,5 +30,5 @@ object BaseApi {
     const val MAIN_API = "http://apis.juhe.cn/springTravel/"
 
     //请求key
-    const val KEY = ""
+    const val KEY = "c5100edd82b9e91b575aa894437fe9af"
 }
