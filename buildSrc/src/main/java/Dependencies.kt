@@ -27,8 +27,8 @@ object Versions {
     const val retrofit_version = "2.9.0"
     const val logging_interceptor_version = "4.7.2"
     const val coroutines_version = "1.4.1"
-    const val arouter_api_version = "1.5.0"
-    const val arouter_compiler_version = "1.2.2"
+    const val arouter_api_version = "1.5.2"
+    const val arouter_compiler_version = "1.5.2"
 }
 
 //三方库管理

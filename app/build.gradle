@@ -72,7 +72,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation(Libs.arouter_api)
-    implementation(Libs.arouter_compiler)
+    kapt (Libs.arouter_compiler)
     implementation project(":appbase")
     if (!isModule.toBoolean()){
         implementation project(":module_city")

@@ -61,7 +61,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 .withString("a", "a")
                 //传递布尔类型的值
                 .withBoolean("b", false)
-                //指定启动模式
+                //指定启动模式 防止context上下文不是activity/fragment的情况下报错
                 .withFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 .navigation()
         }

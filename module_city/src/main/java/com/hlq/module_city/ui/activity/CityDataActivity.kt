@@ -108,7 +108,7 @@ class CityDataActivity : BaseActivity<ActivityCityDataBinding>() {
      */
     private fun loadData() {
         DialogLoadingUtils.showLoading(this, getString(R.string.wait_please))
-        cityDataViewModel.loadCityData().observe(this, {
+        cityDataViewModel.loadCityData().observe(this) {
             DialogLoadingUtils.cancel()
             it?.let {
                 if (it.error_code == 0) {
@@ -140,7 +140,7 @@ class CityDataActivity : BaseActivity<ActivityCityDataBinding>() {
                     }
                 }
             }
-        })
+        }
     }
 
     override fun getViewBinding(): ActivityCityDataBinding {

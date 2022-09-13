@@ -48,6 +48,7 @@ class CityDataAdapter(
         val dataHolder = holder as DataViewHolder
         dataHolder.binding.data = data[position]
         dataHolder.binding.tvFirstLetter.visibility = View.VISIBLE
+        //是否显示分组标题逻辑
         if (position >= 1) {
             if (data[position].firstLetter != data[position - 1].firstLetter) {
                 dataHolder.binding.tvFirstLetter.visibility = View.VISIBLE

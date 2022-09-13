@@ -81,5 +81,5 @@ dependencies {
     api Libs.coroutines
     api Libs.coroutines_android
     implementation(Libs.arouter_api)
-    implementation(Libs.arouter_compiler)
+    kapt (Libs.arouter_compiler)
 }
